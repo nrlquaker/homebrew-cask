@@ -24,12 +24,12 @@ jobs:
             mode: delete
     steps:
       - name: Checkout homebrew/cask-fonts
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           persist-credentials: false
 
       - name: Checkout google/fonts
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: google/fonts
           path: vendor/google-fonts
